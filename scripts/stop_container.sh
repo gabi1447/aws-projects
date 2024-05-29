@@ -2,4 +2,5 @@
 
 # stop and delete docker container if any
 
-docker rm -f
+CONTAINER_ID=`docker ps | awk -f " " '{print $1}'`
+docker rm -f $CONTAINER_ID
