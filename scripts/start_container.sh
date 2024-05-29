@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# Stop running container
-
-docker stop python-flask && docker rm python-flask
-
 # Pull the Docker image from docker hub 
 
 docker pull gabi1447/aws-code-build-python-flask:latest
